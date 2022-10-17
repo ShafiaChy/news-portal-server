@@ -10,7 +10,7 @@ const newsData = require("./data/news-data.json");
 
 app.use(cors());
 app.use(express.json());
-
+module.exports = app;
 // get all news category
 app.get("/news-category", (req, res) => {
   return res.json({ status: true, data: newsCategory });
