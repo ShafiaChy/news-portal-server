@@ -43,6 +43,9 @@ app.get("/news-details/:newsId", (req, res) => {
   return res.json({ status: true, data });
 });
 
+app.get("/", (req, res) => {
+  res.json("server running");
+});
 app.listen(port, () => {
   console.log(`Example app listening on por ${port}`);
 });
